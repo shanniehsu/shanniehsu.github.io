@@ -94,6 +94,9 @@ mouse cursor
 ハンバーかーメニュー
 -------------------------------------------------*/
 .navBtnArea{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -103,13 +106,9 @@ mouse cursor
     -webkit-box-shadow: 2px -2px 2px 0 rgb(0 0 0 / 10%);
     box-shadow: 2px -2px 2px 0 rgb(0 0 0 / 10%);
     background-color: #000;
-	z-index: 1000;
+	z-index: 1005;
 }
-.navBtnArea {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 .headerLogo{
 	margin: 0 auto;
 }
@@ -325,12 +324,13 @@ mouse cursor
 -------------------------------------------------*/
 .mainVisual{
     background-color: #eee;
-    height: 95vh;
-    
-    margin-bottom: 80px;
+    height: 100vh;
+    width:100%;
+    position: relative;
+    margin-bottom: 100px;
 }
 .slider1 .swiper-slide{
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     background: gray;
     background-position: center center;
@@ -374,8 +374,69 @@ mouse cursor
 }
 
 /* ----------------------------------------------
+scroll down
+-------------------------------------------------*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	right:5%;
+	bottom:10px;
+    /*全体の高さ*/
+    height:80px;
+    z-index:1001;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+    /*描画位置*/
+	position: absolute;
+	left: -18px;
+    top: -30px;
+    /*テキストの形状*/
+	color: #eee;
+	font-size: 12px;
+    letter-spacing: 0.05em;
+    transform: rotate(90deg);
+}
+
+/* 線の描写 */
+.scrolldown::after{
+	content: "";
+    /*描画位置*/
+	position: absolute;
+	top: 0;
+    /*線の形状*/
+	width: 1px;
+	height: 30px;
+	background: #eee;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+	animation: pathmove 1.4s ease-in-out infinite;
+	opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+	0%{
+		height:0;
+		top:0;
+		opacity: 0;
+	}
+	30%{
+		height:30px;
+		opacity: 1;
+	}
+	100%{
+		height:0;
+		top:50px;
+		opacity: 0;
+	}
+}
+/* ----------------------------------------------
 作品エリア　グリッド
 -------------------------------------------------*/
+
 .sectionTit{
     font-size: 4.2rem;
     letter-spacing: 2px;
@@ -383,14 +444,14 @@ mouse cursor
     color: #333;
     margin-bottom: 40px;
 }
-.gridWrapper{
+/* .gridWrapper{
     margin-bottom: 60px;
-}
+} */
 .gridWrapper ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 255px);
-    gap: 2%;  
+    gap: 10px;  
     grid-template-areas: 
         "a b c"
         "d d e"    
@@ -556,10 +617,7 @@ story swiper
     transform: scale(1.05);
     transition: .4s ease-in-out;
 }
-.swiper-slide .boxImg:hover img{
-    /* filter: grayscale(100%); */
-    transform: scale(1);
-}
+
 /* テキスト */
 .storyTextArea .storyTit{
     font: 500 1.6rem/1.5 'Montserrat', sans-serif;
@@ -575,6 +633,10 @@ story swiper
 }
 .box:hover .storyTit{
     color: #FF7600;
+}
+.box:hover .boxImg>img{
+    /* filter: grayscale(100%); */
+    transform: scale(1);
 }
 /* .box:hover .boxImg{
     background: #cccccc;
@@ -690,4 +752,82 @@ about
 }
 .aboutSnsList .about_mail a::before{
     background: url(/cmn/img/ico/ico_mail.svg)no-repeat center center;
+}
+
+@media screen and (max-width:768px){
+    /* -------------共通------------- */
+    main{
+        margin-left: 0px;
+    }
+    .container{
+        padding: 0 20px 80px;
+        margin: 0 auto;
+    }
+    /* -------------navigation------------- */
+  
+    .navBtnArea{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        height: 85px;
+        padding: 10px 20px;
+        position: fixed;
+        background: none;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .navBtnArea.thin {
+        width: 100%;
+        height: 80px;
+        background-color: #000;
+      }
+    .headerLogo{
+        flex: 1;
+    }
+    #navToggle {   
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 92%;
+    }
+    .navFooter{
+        display: none;
+    }
+    /* -------------grid作品------------- */
+    .gridWrapper{
+        margin-bottom: 0;
+    }
+    .gridWrapper ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridWrapper li{
+        width: 100%;
+        height: 280px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .gridWrapper li:last-child{
+        margin-bottom: 0px;
+    }
+    .gridWrapper li .gridText{
+        opacity: 1;
+    }
+    /* -------------story slider------------- */
+
+    /* -------------story slider------------- */
+    .aboutWrapper{
+    flex-direction: column;
+    }
+    .aboutWrapper .aboutImg{
+        margin: 0 0 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+
 }
