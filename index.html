@@ -142,6 +142,7 @@
                 <div class="swiper-button-next swiper-button-black"></div>
                 <!-- <div class="swiper-pagination"></div> -->
             </div>
+            <div class="scrolldown"><span>Scroll</span></div>
         </section>
 
         <!-- ーーーーーーー作品グリッドーーーーーーーー -->
@@ -443,7 +444,18 @@
             }
         });
     </script>
-
+    <script>
+        $(function () {
+            var dist = 600;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > dist) {
+                    $('.navBtnArea').addClass('thin');
+                } else {
+                    $('.navBtnArea').removeClass('thin');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
