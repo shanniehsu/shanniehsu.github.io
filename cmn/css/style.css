@@ -663,7 +663,8 @@ story swiper
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;    
+    background-size: cover;
+    box-sizing: border-box;
 }
 .content {
     padding: 60px;
@@ -763,7 +764,8 @@ about
     text-align: right;
     font-size: 1rem;
     color: #808080;
-    margin-right: 30px;
+    margin-right:30px;
+    padding-bottom: 25px;
 }
 
 @media screen and (max-width:768px){
@@ -827,9 +829,7 @@ about
         height: 40px;
         margin-right:20px;
     }
-    /* .spOnly_sns li a:nth-child(2){
-        margin-right:0px;
-    } */
+
     /* -------------grid作品------------- */
     .gridWrapper{
         margin-bottom: 0;
@@ -854,6 +854,22 @@ about
     #story{
         padding: 0 0 100px 20px;
     }
+    .slider2 .swiper-slide{
+        max-width: 240px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 40%;
+        width: calc(var(--swiper-navigation-size) / 50 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+        }
     /* ------------- about------------- */
     .aboutWrapper{
     flex-direction: column;
@@ -862,6 +878,9 @@ about
         margin: 0 0 40px;
         width: 200px;
         height: 200px;
+    }
+    .aboutSnsList a{
+        background: #333;
     }
     /* --------------footer---------------- */
     .copyright{
