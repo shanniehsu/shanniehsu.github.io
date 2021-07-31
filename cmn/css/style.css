@@ -246,7 +246,7 @@ mouse cursor
 /* ------navFooter--------*/
 .navFooter{
 	position: absolute;
-	bottom: 3%;
+	bottom: 2%;
 	display: block;
 }
 .list_sns{
@@ -284,7 +284,12 @@ mouse cursor
 .list_sns .facebook a:before {
     background: url(/cmn/img/sns_ico/ico_facebook.svg)no-repeat center center;
 }
-.multiLanguageAccordion{
+
+.spOnly_sns{
+    display: none;
+}
+/* -----言語選択----- */
+/* .multiLanguageAccordion{
 	display: flex;
 	font-size: 13px;
 }
@@ -298,7 +303,7 @@ mouse cursor
 }
 .multiLanguage a{
 	color: #eee;
-}
+} */
 
 /* ----------------------------------------------
 メニューリストー三浦さんの方法
@@ -753,6 +758,13 @@ about
 .aboutSnsList .about_mail a::before{
     background: url(/cmn/img/ico/ico_mail.svg)no-repeat center center;
 }
+/* --------------footer---------------- */
+.copyright{
+    text-align: right;
+    font-size: 1rem;
+    color: #808080;
+    margin-right: 30px;
+}
 
 @media screen and (max-width:768px){
     /* -------------共通------------- */
@@ -762,6 +774,9 @@ about
     .container{
         padding: 0 20px 80px;
         margin: 0 auto;
+    }
+    .cursor,.follower{
+        display: none;
     }
     /* -------------navigation------------- */
   
@@ -782,7 +797,7 @@ about
     }
     .navBtnArea.thin {
         width: 100%;
-        height: 80px;
+        height: 75px;
         background-color: #000;
       }
     .headerLogo{
@@ -797,6 +812,24 @@ about
     .navFooter{
         display: none;
     }
+    .spOnly_sns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-right: -20px;
+    }
+    .spOnly_sns ul li+li{
+        margin-right:20px;
+    }
+    .spOnly_sns li a{
+        width: 40px;
+        height: 40px;
+        margin-right:20px;
+    }
+    /* .spOnly_sns li a:nth-child(2){
+        margin-right:0px;
+    } */
     /* -------------grid作品------------- */
     .gridWrapper{
         margin-bottom: 0;
@@ -818,8 +851,10 @@ about
         opacity: 1;
     }
     /* -------------story slider------------- */
-
-    /* -------------story slider------------- */
+    #story{
+        padding: 0 0 100px 20px;
+    }
+    /* ------------- about------------- */
     .aboutWrapper{
     flex-direction: column;
     }
@@ -828,6 +863,12 @@ about
         width: 200px;
         height: 200px;
     }
-
+    /* --------------footer---------------- */
+    .copyright{
+        text-align: center;
+        font-size: 1rem;
+        margin-right: 0;
+    }
 
 }
+
