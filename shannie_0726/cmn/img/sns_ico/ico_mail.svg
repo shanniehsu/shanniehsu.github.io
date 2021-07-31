@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="ico_mail" transform="translate(-375 -194)">
+    <rect id="長方形_12" data-name="長方形 12" width="25" height="25" transform="translate(375 194)" fill="#a8a8a8" opacity="0"/>
+    <g id="email_1_" data-name="email (1)" transform="translate(377 123)">
+      <g id="グループ_6" data-name="グループ 6" transform="translate(1.093 84.385)">
+        <g id="グループ_5" data-name="グループ 5">
+          <path id="パス_15" data-name="パス 15" d="M38.956,277.251l-1.787,1.793a1.978,1.978,0,0,1-2.74,0l-1.787-1.793-6.417,6.438a1.856,1.856,0,0,0,.782.176H44.592a1.855,1.855,0,0,0,.782-.176Z" transform="translate(-26.226 -277.251)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="グループ_8" data-name="グループ 8" transform="translate(1.093 76)">
+        <g id="グループ_7" data-name="グループ 7">
+          <path id="パス_16" data-name="パス 16" d="M44.593,76H27.01a1.856,1.856,0,0,0-.782.176l6.857,6.88h0l2.23,2.237a.75.75,0,0,0,.97,0l2.229-2.237h0l6.857-6.88A1.855,1.855,0,0,0,44.593,76Z" transform="translate(-26.228 -76)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="グループ_10" data-name="グループ 10" transform="translate(0 77.051)">
+        <g id="グループ_9" data-name="グループ 9">
+          <path id="パス_17" data-name="パス 17" d="M.2,101.212a1.852,1.852,0,0,0-.2.825v11.25a1.851,1.851,0,0,0,.2.825l6.428-6.449Z" transform="translate(0 -101.212)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="グループ_12" data-name="グループ 12" transform="translate(14.706 77.05)">
+        <g id="グループ_11" data-name="グループ 11">
+          <path id="パス_18" data-name="パス 18" d="M359.361,101.21l-6.428,6.45,6.428,6.449a1.852,1.852,0,0,0,.2-.825v-11.25A1.852,1.852,0,0,0,359.361,101.21Z" transform="translate(-352.933 -101.21)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
