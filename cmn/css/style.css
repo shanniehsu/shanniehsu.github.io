@@ -31,7 +31,7 @@ main{
 
 .container{
     padding: 100px 30px 100px 105px;
-    max-width: 1960px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -664,6 +664,7 @@ story swiper
   }
   section{
     height: 100%;
+    width: 100%;
     background: #fff;  
   }
   section#parallax{
@@ -682,9 +683,7 @@ story swiper
     display: block;
   }
    
-  body{
-    margin: 0; /* Codepen調整 */
-  }
+
 /* ----------------------------------------------
 パララックス
 -------------------------------------------------*/
@@ -792,21 +791,25 @@ about
 /* --------------footer---------------- */
 /* .footer{
     background: #fff;
-}
-.footer .copyright{
+    z-index: 1;
+} */
+.copyright{
     text-align: right;
     line-height: 2rem;
     font-size: 1rem;
     color: #808080;
-} */
-
+    padding: 0 30px 25px 0;
+}
+/* ----------------------------------------------
+SP版
+-------------------------------------------------*/
 @media screen and (max-width:768px){
     /* -------------共通------------- */
     main{
         margin-left: 0px;
     }
     .container{
-        padding: 0 20px 80px;
+        padding: 80px 20px;
         margin: 0 auto;
     }
     .cursor,.follower{
@@ -918,7 +921,7 @@ about
     .copyright{
         text-align: center;
         font-size: 1rem;
-        margin-right: 0;
+        padding: 0 0 20px;
     }
 
 }
