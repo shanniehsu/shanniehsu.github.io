@@ -174,7 +174,7 @@ mouse cursor
     z-index: 1000;
 }
 
-#gloval-nav {
+#global-nav {
     background:#fff;
     color: #333;
     position: fixed;
@@ -193,51 +193,51 @@ mouse cursor
     opacity: 0;
     transition: opacity 0.6s ease, visibility 0.6s ease;
 }
-#gloval-nav a {
+#global-nav a {
     display: block;
     color: #333;
     text-decoration: none;
     padding: 20px 0;
     transition: color 0.6s ease;
 }
-#gloval-nav a:hover {
+#global-nav a:hover {
     color:#FF7600;
 }
-#gloval-nav ul {
+#global-nav ul {
     list-style: none;
 }
-#gloval-nav ul li {
+#global-nav ul li {
     opacity: 0;
     transform: translateX(-200px);
     transition: transform 0.6s ease, opacity 0.2s ease;
 }
-#gloval-nav ul li:nth-child(2) {
+#global-nav ul li:nth-child(2) {
     transition-delay: 0.15s;
 }
-#gloval-nav ul li:nth-child(3) {
+#global-nav ul li:nth-child(3) {
     transition-delay: 0.3s;
 }
-#gloval-nav ul li:nth-child(4) {
+#global-nav ul li:nth-child(4) {
     transition-delay: 0.45s;
 }
-#gloval-nav ul li:nth-child(5) {
+#global-nav ul li:nth-child(5) {
     transition-delay: 0.6s;
 }
-#gloval-nav ul li:nth-child(6) {
+#global-nav ul li:nth-child(6) {
     transition-delay: 0.75s;
 }
-#gloval-nav ul li:nth-child(7) {
+#global-nav ul li:nth-child(7) {
     transition-delay: 0.9s;
 }
 /* open */
 .open {
     overflow: hidden;
 }
-.open #gloval-nav {
+.open #global-nav {
     visibility: visible;
     opacity: .9;
 }
-.open #gloval-nav li {
+.open #global-nav li {
     opacity: 1;
     transform: translateX(0);
     transition: transform 1s ease, opacity 0.9s ease;
@@ -621,6 +621,7 @@ story swiper
     overflow: hidden;
     transform: scale(1.05);
     transition: .4s ease-in-out;
+    vertical-align: bottom;
 }
 
 /* テキスト */
@@ -863,6 +864,13 @@ SP版
         width: 40px;
         height: 40px;
         margin-right:20px;
+    }
+    /* -------------メインビュー------------ */
+    .mainVisual{
+        height: 50vh;
+    }
+    .slider1 .swiper-slide{
+        height: 50vh;
     }
 
     /* -------------grid作品------------- */

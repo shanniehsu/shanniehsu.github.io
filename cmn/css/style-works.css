@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*＝＝＝タイトル*/
+.pageTit{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font: 500 4.2rem/1 'Montserrat', sans-serif;
+    color: #333;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/*＝＝＝並び替えボタンのCSS*/
+.sort-btn{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:50px 20px;
+}
+
+.sort-btn li{
+  /* background:#eee;
+  border-radius:10px; */
+  cursor: pointer;
+  padding: 10px;
+  border-right: #ccc;
+}
+
+.sort-btn li.active{/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
+  color: #FF7600;  
+}
+
+/*横幅が480px以下になった際の指定*/
+@media only screen and (max-width: 480px) {
+.sort-btn{
+  justify-content: space-between;
+}
+  
+.sort-btn li{
+  width:48%;
+  margin:0 0 10px 0;
+  text-align:center;
+  } 
+}
+
+/*＝＝＝Muuriのレイアウトのための調整 */
+.grid {
+  position: relative;/*並び替えの基準点を指定*/
+  
+}
+.grid li{
+    position: relative;
+}
+/* グリッドテキスト---------------------------------- */
+.box .gridText{
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, .7));
+    border-radius: 5px;
+    -webkit-transition:	all 0.2s ease;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+.box:hover .gridText{
+    opacity: 1;
+}
+.box .gridTit{
+    font: 500 1.5rem/1rem 'Montserrat', sans-serif;
+    padding-bottom: 8px;
+}
+.box .gridCatalog{
+    font: 400 1.3rem/1rem 'Montserrat', sans-serif;
+    color: #FF7600;
+}
+
+/* グリッド画像---------------------------------- */
+.grid .box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: .4s ease-in-out;
+}
+.box:hover img{
+    /* filter: grayscale(100%); */
+    transform: scale(1);
+}
+/*各画像の横幅などの設定*/
+.item {
+  display: block;
+  position: absolute;
+  width: 33%;/*横並びで3つ表示*/
+  z-index: 1;
+  padding: 10px;
+}
+
+/*内側のボックスの高さが崩れないように維持*/
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+.box img{
+  border-radius: 5px;
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+/*横幅が768px以下になった際の指定*/
+@media only screen and (max-width: 768px) {
+.item {
+  width: 49.5%;/*横並びで2つ表示*/
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+ul{
+  margin:0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: #333;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+  font-size:6vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin:30px 0;
+}
+
+p{
+  margin:0 10px 10px 10px;
+  word-wrap : break-word;
+}
+}
