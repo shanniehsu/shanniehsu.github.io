@@ -331,36 +331,48 @@ mouse cursor
     background-color: #eee;
     height: 100vh;
     width:100%;
-    position: relative;
-    /* margin-bottom: 100px; */
+    position: relative;   
 }
-.slider1 .swiper-slide{
+.slider1{
+    width: 100%;
+}
+.slider1 .swiper-slide a{
+    display: block;
     height: 100vh;
-    width: 100vw;
-    background: gray;
-    background-position: center center;
+    width: 100%;
+}
+/* mainVisual ーーーーーー背景画像 */
+.mainV_01{
+    background: url(/cmn/img/photo/main/01.jpg)no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.slider1 {
+  }
+.mainV_02{
+    background: url(/cmn/img/photo/main/02.jpg)no-repeat center center;
+    background-size: cover;
+  }
+.mainV_03{
+    background: url(/cmn/img/photo/main/03.jpg)no-repeat center center;
+    background-size: cover;
+  }
+.mainV_04{
+    background: url(/cmn/img/photo/main/04.jpg)no-repeat center center;
+    background-size: cover;
+  }
+.mainV_05{
+    background: url(/cmn/img/photo/main/05.jpg)no-repeat center center;
+    background-size: cover;
+  }
+/* テキストーーーーーーキャプション */
+.slider1 .mainV{
     position: relative;
-    
+    width: 100%;
 }
-/* paging */
-.slider1 .swiper-pagination-fraction{
-    position: absolute;
-    bottom: 6%;
-    color:#fff;
-}
-/* キャプション */
-.slider1 .swiper-slide{
-    position: relative;
-}
+
 .slider1 .txt_area{
     position: absolute;
+    content: '';
     display: inline-block;
     width: 100%;
-    /* height: 25%; */
     left: 0;
     bottom: 0;
     padding-top: 3%;
@@ -656,7 +668,6 @@ story swiper
     color: #FF7600;
 }
 
-
 /* ----------------------------------------------
 パララックス
 -------------------------------------------------*/
@@ -710,7 +721,7 @@ about
 -------------------------------------------------*/
 .aboutWrapper{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -737,6 +748,7 @@ about
     line-height: 1.5;
     font-size: 1.5rem;
     font-weight: 400;
+    padding-bottom: 30px;
 }
 .aboutSns{
     display: flex;
@@ -865,13 +877,14 @@ SP版
         margin-right:20px;
     }
     /* -------------メインビュー------------ */
+   
     .mainVisual{
         height: 50vh;
         padding-top: 75px;
         margin-bottom: 75px;
-        background: #000;
+
     }
-    .slider1 .swiper-slide{
+    .slider1 .swiper-slide a{
         height: 50vh;
     }
     .slider1 .txt_area{
@@ -942,6 +955,7 @@ SP版
     /* ------------- about------------- */
     .aboutWrapper{
     flex-direction: column;
+    align-items: center;
     }
     .aboutWrapper .aboutImg{
         margin: 0 0 40px;

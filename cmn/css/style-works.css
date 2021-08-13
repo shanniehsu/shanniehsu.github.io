@@ -5,6 +5,8 @@
 ===================================*/
 .wrapper{
     max-width: 1920px;
+    width: 100%;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -134,7 +136,7 @@
 /*横幅が768px以下になった際の指定*/
 @media only screen and (max-width: 768px) {
 .item {
-  width: 49.5%;/*横並びで2つ表示*/
+  width: 49%;/*横並びで2つ表示*/
 }
 
 
