@@ -53,7 +53,7 @@ main{
 }
 
 .container{
-    padding: 100px 30px 100px 105px;
+    padding: 100px 30px 40px 105px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -633,7 +633,7 @@ scroll down
 story swiper
 -------------------------------------------------*/
 #story{
-    padding: 0 0 100px 105px;
+    padding: 60px 0 100px 105px;
     max-width: 1960px;
     margin: 0 auto;
 }
@@ -851,7 +851,7 @@ SP版
         margin-left: 0px;
     }
     .container{
-        padding: 80px 20px;
+        padding: 80px 20px 40px;
         margin: 0 auto;
     }
     .cursor,.follower{
@@ -973,7 +973,7 @@ SP版
     }
     /* -------------story slider------------- */
     #story{
-        padding: 0 0 100px 20px;
+        padding: 80px 0 100px 20px;
     }
     .slider2 .swiper-slide{
         max-width: 240px;
