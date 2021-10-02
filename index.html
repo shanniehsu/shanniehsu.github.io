@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cmn-Hant">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="/cmn/css/cssreset-min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/cmn/css/swiper.css">
     <link rel="stylesheet" href="/cmn/css/style.css">
 </head>
 
@@ -25,7 +27,7 @@
         <div class="navBtnArea">
             <h1 class="headerLogo">
                 <a href="/" class="notHover">
-                    <img class="logo" src="/cmn/img/logo/logo.png" alt="Shannie">
+                    <img id="logo" src="/cmn/img/logo/logo.png" alt="Shannie">
                 </a>
             </h1>
             <div id="navToggle">
@@ -56,8 +58,8 @@
             <nav>
                 <ul id="navigation">
                     <li><a href="/index.html">TOP</a></li>
-                    <li><a href="/works.html">WORKS</a></li>
-                    <li><a href="/stories.html">BLOG</a></li>
+                    <li><a href="/index.html#works">WORKS</a></li>
+                    <li><a href="/index.html#story">NEWS</a></li>
                     <li><a href="/index.html#about">ABOUT</a></li>
                 </ul>
                 <ul class="list_sns spOnly_sns">
@@ -76,9 +78,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="mainV">
-                            <a class="mainV_01" href="/works.html">
+                            <a class="mainV_01" href="/works/incense_master.html">
                                 <div class="txt_area">
-                                    <h3>texttexttext</h3>
+                                    <h3>Humans in Burning Man 火與人</h3>
                                     <p>Journey</p>
                                 </div>
                             </a>
@@ -88,8 +90,8 @@
                         <div class="mainV">
                             <a class="mainV_02" href="/works.html">
                                 <div class="txt_area">
-                                    <h3>texttexttext</h3>
-                                    <p>Journey</p>
+                                    <h3>Novem & Jerry</h3>
+                                    <p>Wedding</p>
                                 </div>
                             </a>
                         </div>
@@ -98,8 +100,8 @@
                         <div class="mainV">
                             <a class="mainV_03" href="/works.html">
                                 <div class="txt_area">
-                                    <h3>texttexttext</h3>
-                                    <p>Journey</p>
+                                    <h3>Incense Master 老明玉香舖</h3>
+                                    <p>Story</p>
                                 </div>
                             </a>
                         </div>
@@ -108,8 +110,8 @@
                         <div class="mainV">
                             <a class="mainV_04" href="/works.html">
                                 <div class="txt_area">
-                                    <h3>texttexttext</h3>
-                                    <p>Journey</p>
+                                    <h3>Jaden’s 1st Birthday</h3>
+                                    <p>Portraits</p>
                                 </div>
                             </a>
                         </div>
@@ -118,8 +120,18 @@
                         <div class="mainV">
                             <a class="mainV_05" href="/works.html">
                                 <div class="txt_area">
-                                    <h3>texttexttext</h3>
-                                    <p>Journey</p>
+                                    <h3>Embroidery Master 南新繡莊</h3>
+                                    <p>Story</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainV">
+                            <a class="mainV_06" href="/works.html">
+                                <div class="txt_area">
+                                    <h3>Barista Stories</h3>
+                                    <p>Portraits</p>
                                 </div>
                             </a>
                         </div>
@@ -143,7 +155,7 @@
                         <a href="" class="box">
                             <img src="/cmn/img/photo/works/work_01.jpg" alt="">
                             <div class="gridText">
-                                <p class="gridTit"> Walking with Mazu 白沙屯媽祖進香中</p>
+                                <p class="gridTit">Walking with Mazu 白沙屯媽祖進香中</p>
                                 <p class="gridCatalog">Journey</p>
                             </div>
                         </a>
@@ -170,8 +182,8 @@
                         <a href="" class="box">
                             <img src="/cmn/img/photo/works/work_04.jpg" alt="">
                             <div class="gridText">
-                                <p class="gridTit">Setouchi 途中の一步</p>
-                                <p class="gridCatalog">Journey</p>
+                                <p class="gridTit">Novem & Jerry</p>
+                                <p class="gridCatalog">Wedding</p>
                             </div>
                         </a>
                     </li>
@@ -206,7 +218,7 @@
                         <a href="" class="box">
                             <img src="/cmn/img/photo/works/work_08.jpg" alt="">
                             <div class="gridText">
-                                <p class="gridTit">Dearest…</p>
+                                <p class="gridTit">Barista Stories</p>
                                 <p class="gridCatalog">Portraits</p>
                             </div>
                         </a>
@@ -222,15 +234,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="sectionBtn">
+            <!-- <div class="sectionBtn">
                 <a href="/works.html" class="btn">View All Works</a>
-            </div>
+            </div> -->
         </section>
 
         <!-- ----------------------story swiper-------------------- -->
         <section id="story">
             <div class="story_container">
-                <h2 class="sectionTit effect-fade">BLOG</h2>
+                <h2 class="sectionTit effect-fade">NEWS</h2>
                 <div class="swiper-container slider2 effect-fade">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -263,59 +275,15 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="" class="box">
-                                <div class="boxImg">
-                                    <img src="/cmn/img/photo/main/01.jpg" alt="">
-                                </div>
-                                <div class="storyTextArea">
-                                    <p class="storyTit">進香大小事＃3</p>
-                                    <p class="storyText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                        diam
-                                        nonumy
-                                        eirmod tempor invidunt ut </p>
-                                    <p class="storyDate">2020.08.31 | 小日子</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class="box">
-                                <div class="boxImg">
-                                    <img src="/cmn/img/photo/main/01.jpg" alt="">
-                                </div>
-                                <div class="storyTextArea">
-                                    <p class="storyTit">進香大小事＃3</p>
-                                    <p class="storyText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                        diam
-                                        nonumy
-                                        eirmod tempor invidunt ut </p>
-                                    <p class="storyDate">2020.08.31 | 小日子</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="" class="box">
-                                <div class="boxImg">
-                                    <img src="/cmn/img/photo/main/01.jpg" alt="">
-                                </div>
-                                <div class="storyTextArea">
-                                    <p class="storyTit">進香大小事＃3</p>
-                                    <p class="storyText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                        diam
-                                        nonumy
-                                        eirmod tempor invidunt ut </p>
-                                    <p class="storyDate">2020.08.31 | 小日子</p>
-                                </div>
-                            </a>
-                        </div>
+
 
                     </div>
                     <!-- <div class="prev swiper-button-prev swiper-button-black"></div>
                     <div class="next swiper-button-next swiper-button-black"></div> -->
                 </div>
-                <div class="sectionBtn">
+                <!-- <div class="sectionBtn">
                     <a href="#" class="btn">View All Posts</a>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="parallax">
@@ -331,14 +299,10 @@
                 <div class="aboutImg"></div>
                 <div class="aboutTextArea">
                     <p class="aboutTit">Shannie Hsu</p>
-                    <p class="aboutText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumyeirmod tempor invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam
-                        nonumyeirmod tempor invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam
-                        nonumyeirmod tempor invidunt utLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                        diam
-                        nonumyeirmod tempor invidunt ut
+                    <p class="aboutText">
+                        徐佳鈴 —
+                        1986年生，心理系畢業，於影展與文化圈裡疾走的地味女子。</br>曾參與拍攝《城西生活節》傳統技藝職人《萬華老城咖啡香》咖啡師群像，<br
+                            class="pc" />在日常或非典型的遠行中紀錄情感流動與生活光暈。
                     </p>
                     <!-- <div class="sectionBtn">
                         <a href="#" class="btn">Learn more about me</a>
@@ -379,6 +343,11 @@
             $('#nav-bg-wrap').on('click', function () {
                 $('body').removeClass('open');
             });
+
+            $('#navigation li a').on('click', function () {
+                $('body').removeClass('open');
+            });
+
         })(jQuery);
     </script>
 
@@ -436,6 +405,7 @@
             $(window).scroll(function () {
                 if ($(window).scrollTop() > dist) {
                     $('.navBtnArea').addClass('thin');
+
                 } else {
                     $('.navBtnArea').removeClass('thin');
                 }

@@ -20,6 +20,29 @@ body {
     font-family: 'Montserrat', sans-serif;
     /* cursor: none; */
 }
+
+/* PC・SP出しわけ */
+@media screen and (max-width:768px) {
+	.pc {
+		display: none;
+    }
+    .sp { display:inline; }
+}
+@media screen and (min-width:768px) {
+	.sp {
+		display: none;
+    }
+    .pc { display:inline; }
+}
+/* PC・SP改行分け */
+@media screen and (min-width: 768px){   
+    .pc { display:inline; }
+    .sp { display:none; }
+  }
+  @media screen and (max-width: 768px){   
+    .pc { display:none; }
+    .sp { display:inline; }
+  }
 /* デフォルト */
 a {
 	color: #333333;
@@ -362,6 +385,10 @@ mouse cursor
     background: url(/cmn/img/photo/main/05.jpg)no-repeat center center;
     background-size: cover;
   }
+.mainV_06{
+    background: url(/cmn/img/photo/main/06.jpg)no-repeat center center;
+    background-size: cover;
+  }
 /* テキストーーーーーーキャプション */
 .slider1 .mainV{
     position: relative;
@@ -688,7 +715,7 @@ story swiper
     content: "";
     width: 100%;
     height: 100vh;
-    background: url(/cmn/img/photo/main/06.jpg) no-repeat center / cover;
+    background: url(/cmn/img/photo/parallax/06.jpg) no-repeat center / cover;
     position: fixed;
     left: 0;
     top: 0;
@@ -745,7 +772,8 @@ about
     display: inline-block;
 }
 .aboutTextArea .aboutText{
-    line-height: 1.5;
+    color: #555555;
+    line-height: 2;
     font-size: 1.5rem;
     font-weight: 400;
     padding-bottom: 30px;
@@ -847,11 +875,22 @@ SP版
         -o-transition: all 0.3s ease;
         background-color: #000;
     }
-    
+    .navBtnArea.thin {
+        width: 100%;
+        height: 75px;
+        
+      }
     .headerLogo{
         flex: 1;
         text-align: left;
     }
+    #logo{
+        margin-top: 20px;
+        top: 0;
+        width: 90px;
+        height: 100%;
+    }
+    
     #navToggle {   
         height: 30px;
         position: absolute;
