@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="shannie' work">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Shannie'work</title>
+    <link rel="stylesheet" href="/cmn/css/cssreset-min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/cmn/css/style.css">
+    <link rel="stylesheet" href="/cmn/css/works.css">
+</head>
+
+<body>
+    <!-- ーーーーーーーmouse cursorーーーーーーーーー -->
+    <div class="cursor"></div>
+    <div class="follower"></div>
+    <!-- ーーーーーーーサイトバーーーーーーーー -->
+    <header id="header">
+        <div class="navBtnArea">
+            <h1 class="headerLogo">
+                <a href="/" class="notHover">
+                    <img id="logo" src="/cmn/img/logo/logo.png" alt="Shannie">
+                </a>
+            </h1>
+            <div id="navToggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navFooter">
+                <ul class="list_sns">
+                    <li class="facebook"><a href="https://www.facebook.com/shanniehsu"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/shanniehsu/"></a></li>
+                </ul>
+                <!-- <dl class="multiLanguageAccordion">
+                <dt class="multiLanguageActive">CN</dt>
+                <dd>
+                    <ul>
+                        <li class="multiLanguage"><a href="/eng/" target="_blank" class="notHover">EN</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl> -->
+            </div>
+        </div>
+        <!-- ーーーーーーーメニューーーーーーーー -->
+        <div id="global-nav">
+            <nav>
+                <ul id="navigation">
+                    <li><a href="/index.html">TOP</a></li>
+                    <li><a href="/index.html#works">WORKS</a></li>
+                    <li><a href="/index.html#story">NEWS</a></li>
+                    <li><a href="/index.html#about">ABOUT</a></li>
+                </ul>
+                <ul class="list_sns spOnly_sns">
+                    <li class="facebook"><a href="https://www.facebook.com/shanniehsu"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/shanniehsu/"></a></li>
+                </ul>
+            </nav>
+            <div id="nav-bg-wrap"></div>
+        </div>
+    </header>
+    <!-- ーーーーーーーメインコンテンツーーーーーーーー -->
+    <main class="main">
+        <section id="work02" class="container">
+            <div class="workText">
+                <h2 class="workTit">Humans in Burning Man 火與人</h2>
+                <h4 class="workCategory">ー Journey</h4>
+                <p class="workDescription">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                    accusam et justo duo
+                </p>
+            </div>
+            <div class="workPhotoArea"></div>
+            <ul>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_1_pc.png"
+                        alt="Humans in Burning Man 火與人之1"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_2_pc.png"
+                        alt="Humans in Burning Man 火與人之2"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_3_pc.png"
+                        alt="Humans in Burning Man 火與人之3"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_4_pc.png"
+                        alt="Humans in Burning Man 火與人之4"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_5_pc.png"
+                        alt="Humans in Burning Man 火與人之5"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_6_pc.png"
+                        alt="Humans in Burning Man 火與人之6"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_7_pc.png"
+                        alt="Humans in Burning Man 火與人之7"></li>
+                <li class="workPhoto"><img class="animation" src="/cmn/img/works/journey02/work02_8_pc.png"
+                        alt="Humans in Burning Man 火與人之8"></li>
+
+
+            </ul>
+        </section>
+        <!-- ーーーーーーーフッターーーーーーーーー -->
+        <section class="footer">
+            <p class="copyright">copyright&copy;Shanniehsu.All Rights Reserved.</p>
+        </section>
+    </main>
+    <!-- ----------------------------------------------
+    javascript
+    ------------------------------------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="/cmn/js/global.js"></script>
+
+    <!-- menuを開く -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $('#navToggle').on('click', function () {
+                    $('body').toggleClass('open');
+                });
+            });
+            $('#nav-bg-wrap').on('click', function () {
+                $('body').removeClass('open');
+            });
+
+            $('#navigation li a').on('click', function () {
+                $('body').removeClass('open');
+            });
+
+        })(jQuery);
+    </script>
+
+    <!-- タイトル文字effect-fade -->
+    <script src="/cmn/js/fadeIn.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(window).on('load scroll', function () {
+                $('.animation').each(function () {
+                    //ターゲットの位置を取得
+                    var target = $(this).offset().top;
+                    //スクロール量を取得
+                    var scroll = $(window).scrollTop();
+                    //ウィンドウの高さを取得
+                    var height = $(window).height();
+                    //ターゲットまでスクロールするとフェードインする
+                    if (scroll > target - height) {
+                        //クラスを付与
+                        $(this).addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -17,7 +17,7 @@ body {
 	background: #fff;
     position: relative;
     font-size: 1.4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Josefin+Sans','Montserrat', sans-serif;
     /* cursor: none; */
 }
 
@@ -483,7 +483,6 @@ scroll down
 -------------------------------------------------*/
 
 .sectionTit{
-    font-size: 4.2rem;
     letter-spacing: 2px;
     font: 500 4.2rem/1 'Montserrat', sans-serif;
     color: #333;

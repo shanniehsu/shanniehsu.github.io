@@ -1,0 +1,43 @@
+.workTit{
+    font: 500 2.4rem/1.3 'Josefin+Sans','Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    color: #427785;
+    padding-bottom: 10px;
+}
+.workCategory{
+    font: 300 1.2rem/1 'Montserrat', sans-serif;
+    color: #FF7600;
+    padding-bottom: 20px;
+}
+.workDescription{
+    font: 400 1.5rem/1.5 'Montserrat', sans-serif;
+    color: #808080;
+    padding-bottom: 60px;
+}
+.workPhoto{
+    margin-bottom: 14px;
+}
+/*アニメーション要素のスタイル*/
+.animation{
+	opacity : 0;
+	visibility: hidden;
+	transition: 1s;
+	transform: translateY(30px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+.active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.container{
+    /* padding: 100px 30px 40px 105px; */
+    max-width: 980px;
+    margin: 0 auto;
+}
+@media screen and (max-width:768px) {
+    .workText{
+        margin-top: 30px;
+    }
+}
